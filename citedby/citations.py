@@ -20,12 +20,6 @@ with open(_CURRENT_DIR + '/data/citations.json', 'r') as metrics:
         _DOCUMENTS[item['article']['code']] = item
 
 
-def total_received_citations(pid):
-
-    return _DOCUMENTS.get(
-        pid, {'article', {'total_received': 0}})['article']['total_received']
-
-
 def raw_data(pid):
 
     return copy.deepcopy(_DOCUMENTS.get(pid, None))
