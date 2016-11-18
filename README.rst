@@ -1,4 +1,4 @@
-ArticleMeta API Client
+CitedBy API Client
 ----------------------
 
 Biblioteca para fornecer metodos para interar em endpoints da API Restful e API RPC do CitedBy.
@@ -12,7 +12,7 @@ Build Status
 Como Instalar
 -------------
 
-pip install articlemetaapi
+pip install citedbyapi
 
 Como usar
 ---------
