@@ -136,3 +136,22 @@ Como usar
        'start_page': '603',
        'titles': ['Life tables and reproductive parameters of Lutzomyia spinicrassa (Diptera: Psychodidae) under laboratory conditions'],
        'url': 'http://www.scielo.br/scielo.php?script=sci_arttext&pid=S0074-02762004000600012&lng=en&tlng=en'}]}
+
+Carregando arquivo de citações em memória
+-----------------------------------------
+
+Para processos que demandam alta velocidade de processamento, o SciELO disponibiliza
+um arquivo .json com todas as citações recebidas de documentos SciELO. O formato
+segue o mesmo padrão do formato entregue pela API.
+
+Para utilizar o arquivo é necessário fazer o download do mesmo em: http://static.scielo.org/citedby/citedbyapi.json.gz
+
+(Este arquivo será atualizado semestralmente)
+
+O arquivo deve ser depositado em qualquer local no servidor onde a biblioteca citebyapi está instalada.
+
+Antes de utilizar a biblioteca é necessário configurar uma variável de ambiente que indica o local onde o arquivo foi depositado.
+
+export CITEDBYAPI_HEAP_FILE=~/Documents/citations.json
+
+Na ausência deste arquivo, todas as requisições serão feitas diretamente para API, que possui tempo de resposta reduzido.
