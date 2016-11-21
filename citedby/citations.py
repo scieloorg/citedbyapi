@@ -11,12 +11,13 @@ _CURRENT_DIR = os.path.abspath(os.path.dirname(__file__))
 
 _DOCUMENTS = {}
 
-with open(_CURRENT_DIR + '/data/citations.json', 'r') as metrics:
+filepath = os.environ.get(
+    'CITEDBYAPI_HEAP_FILE', _CURRENT_DIR + '/data/citations.json')
+
+with open(filepath, 'r') as metrics:
 
     for line in metrics:
-
         item = json.loads(line)
-
         _DOCUMENTS[item['article']['code']] = item
 
 

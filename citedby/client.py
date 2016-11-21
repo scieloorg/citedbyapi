@@ -143,7 +143,7 @@ class ThriftClient(object):
         """
         Cliente thrift para o Articlemeta.
         """
-        self.domain = domain or '127.0.0.1:11620'
+        self.domain = domain or 'citedby.scielo.org:11610'
         self._set_address()
 
     def _set_address(self):
