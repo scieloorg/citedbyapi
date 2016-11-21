@@ -15,12 +15,11 @@ filepath = os.environ.get(
     'CITEDBYAPI_HEAP_FILE', _CURRENT_DIR + '/data/citations.json')
 
 with open(filepath, 'r') as metrics:
-
     for line in metrics:
         item = json.loads(line)
-        _DOCUMENTS[item['article']['code']] = item
+        _DOCUMENTS[item['article']['code']] = json.dumps(item)
 
 
 def raw_data(pid):
 
-    return copy.deepcopy(_DOCUMENTS.get(pid, None))
+    return copy.deepcopy(json.loads(_DOCUMENTS.get(pid, None)))
