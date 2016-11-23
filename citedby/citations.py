@@ -22,4 +22,9 @@ with open(filepath, 'r') as metrics:
 
 def raw_data(pid):
 
-    return copy.deepcopy(json.loads(_DOCUMENTS.get(pid, None)))
+    try:
+        data = copy.deepcopy(json.loads(_DOCUMENTS.get(pid, '')))
+    except ValueError:
+        data = None
+
+    return data

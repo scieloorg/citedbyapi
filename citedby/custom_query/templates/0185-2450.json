@@ -1,0 +1,12 @@
+{
+    "should": [
+        {
+            "fuzziness": 1,
+            "title": "Diánoia"
+        },
+        {
+            "fuzziness": 1,
+            "title": "Revista Diánoia"
+        }
+    ]
+}

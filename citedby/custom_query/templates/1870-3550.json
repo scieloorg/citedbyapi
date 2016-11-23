@@ -1,0 +1,12 @@
+{
+    "should": [
+        {
+            "title": "Revista Norteamérica",
+            "fuzziness": 3
+        }
+    ],
+    "must_not": [
+        "North America",
+        "North América,"
+    ]
+}

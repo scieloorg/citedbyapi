@@ -1,0 +1,12 @@
+{
+    "should": [
+        {
+            "title": "TIP",
+            "fuzziness": 0
+        },
+        {
+            "title": "Revista especializada en ciencias quimico biologicas",
+            "fuzziness": 3
+        }
+    ]
+}
