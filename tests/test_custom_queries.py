@@ -9,7 +9,7 @@ class CustomQueriesTest(unittest.TestCase):
 
     def test_load_query_from_file(self):
 
-        result = journal_titles.load_query_from_file(
+        result = journal_titles._load_query_from_file(
             '%s/custom_queries_templates/0000-0000.json' % os.path.abspath(os.path.dirname(__file__))
         )
 
@@ -53,7 +53,7 @@ class CustomQueriesTest(unittest.TestCase):
 
     def test_load_query_from_file_invalid_json(self):
 
-        result = journal_titles.load_query_from_file(
+        result = journal_titles._load_query_from_file(
             '%s/custom_queries_templates/0000-0000_invalid.json' % os.path.abspath(os.path.dirname(__file__))
         )
 

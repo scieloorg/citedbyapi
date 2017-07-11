@@ -81,7 +81,7 @@ class RestfulClient(object):
 
         pid: SciELO PID number
         metaonly: will retrieve only the metadata of the requested article citations including the number of citations it has received.
-        from_heap: will retrieve the number of citations from a preproduced report, it will not fetch the api. Much faster results but not extremelly updated.
+        from_heap: will retrieve the number of citations from a preproduced report, it will not fetch the api. Much faster results but not extremely updated.
         """
 
         if from_heap is True:

@@ -9,24 +9,34 @@ _CURRENT_DIR = os.path.abspath(os.path.dirname(__file__))
 JOURNALS = {}
 
 
-def load_query_from_file(file_name):
+def _load_query_from_file(file_name):
+
+    if os.path.isdir(file_name):
+        return None
+
     with open(file_name, 'r') as f:
         try:
             query = json.load(f)
+            return query
         except ValueError:
-            logger.warning(' Fail to load custom query for: %s' % file_name)
+            logger.warning(' Fail to load custom query (invalid json) for: %s' % file_name)
             return None
 
-    return query
 
-for f in os.listdir(_CURRENT_DIR + '/templates'):
-    issn = f[:9]
-    query = load_query_from_file(_CURRENT_DIR + '/templates/%s' % f)
+def _load_queries():
 
-    if query:
-        JOURNALS[issn] = json.dumps(query)
+    for f in os.listdir(_CURRENT_DIR + '/templates'):
+        issn = f[:9]
+        file_name = _CURRENT_DIR + '/templates/%s' % f
+
+        query = _load_query_from_file(file_name)
+
+        if query:
+            JOURNALS[issn] = json.dumps(query)
 
 
 def load(issn):
 
     return json.loads(JOURNALS.get(issn, '{}'))
+
+_load_queries()

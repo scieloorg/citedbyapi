@@ -1,1 +1,2 @@
 recursive-include citedby *.thrift *.json
+recursive-include tests *.json
