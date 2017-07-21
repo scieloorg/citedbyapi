@@ -1,0 +1,11 @@
+{
+    "must_not": [
+        "Tankay",
+        "Maskana",
+        "ASSAY",
+        "MASCA",
+        "MASTAN2",
+        "Mask",
+        "Maska 5"
+   ]
+}

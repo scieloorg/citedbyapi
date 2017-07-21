@@ -4,14 +4,14 @@ from setuptools import setup, find_packages
 install_requires = [
     'thriftpy==0.3.1',
     'requests>=2.11.1',
-    'xylose>=1.16.5'
+    'xylose>=1.24.0'
 ]
 
 tests_require = []
 
 setup(
     name="citedbyapi",
-    version="1.4.10",
+    version="1.5.0",
     description="Library that implements the endpoints of the CitedBy API",
     author="SciELO",
     author_email="scielo-dev@googlegroups.com",

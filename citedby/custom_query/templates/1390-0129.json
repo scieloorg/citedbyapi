@@ -1,0 +1,25 @@
+{
+    "should": [
+        {
+            "fuzziness": 2, 
+            "title": "Rev Politéc. (Quito)"
+
+        },
+        {
+            "fuzziness": 2, 
+            "title": "Revista Politécnica"
+
+        },
+        {
+            "fuzziness": 2, 
+            "title": "Rev Politéc"
+
+        },
+        {
+            "fuzziness": 2, 
+            "title": "Revista Politécnica Quito"
+
+        },
+
+    ]
+}
