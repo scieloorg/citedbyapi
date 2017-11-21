@@ -11,7 +11,7 @@ tests_require = []
 
 setup(
     name="citedbyapi",
-    version="1.9.0",
+    version="1.10.0",
     description="Library that implements the endpoints of the CitedBy API",
     author="SciELO",
     author_email="scielo-dev@googlegroups.com",
