@@ -1,0 +1,47 @@
+{
+    "should": [
+        {
+            "title": "Tema (São Carlos)",
+            "fuzziness": 3
+        },
+        {
+            "title": "Tema",
+            "fuzziness": 1
+        }
+    ],
+    "must_not": [
+        "Rima, São Carlos",
+        "Teme",
+        "Time",
+        "Reme",
+        "Tome",
+        "tese",
+        "Leme",
+        "Tempe",
+        "Theme",
+        "Temas",
+        "Ktema",
+        "TEMAS",
+        "Temas.",
+        "FEMA",
+        "Ktèma",
+        "Ktéma",
+        "Tréma",
+        "EMA/167896/2013",
+        "EMA/167897/2013",
+        "EMA/240810/2013",
+        "EMA/327056/2013",
+        "EMA/42251/2013",
+        "EMA/422789/2013",
+        "EMA/5734/2013",
+        "EMA/717996/2012",
+        "Ema",
+        "TEA",
+        "Tea",
+        "Teba",
+        "Teka",
+        "Temoa",
+        "Thema",
+        "lema"
+    ]
+}
