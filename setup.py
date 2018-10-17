@@ -12,12 +12,10 @@ tests_require = []
 setup(
     name="citedbyapi",
     version="1.11.1",
-    description="Library that implements the endpoints of the CitedBy API",
+    description="SciELO CitedBy service SDK for Python",
     author="SciELO",
     author_email="scielo-dev@googlegroups.com",
-    maintainer="Fabio Batalha",
-    maintainer_email="fabio.batalha@scielo.org",
-    url="http://github.com/scieloorg/processing",
+    url="http://github.com/scieloorg/citedbyapi",
     packages=find_packages(),
     include_package_data=True,
     classifiers=[
