@@ -2,7 +2,7 @@
 from setuptools import setup, find_packages
 
 install_requires = [
-    'thriftpy==0.3.1',
+    'thriftpy>=0.3.1',
     'requests>=2.11.1',
     'xylose>=1.31.0'
 ]
