@@ -9,7 +9,7 @@ install_requires = [
 
 setup(
     name="citedbyapi",
-    version="1.11.2",
+    version="1.11.3",
     description="SciELO CitedBy service SDK for Python",
     author="SciELO",
     author_email="scielo-dev@googlegroups.com",
